@@ -9,7 +9,7 @@
     "share":"lt --port 3000",
     "lint":"esw webpack.config.* src bulidScripts --color",
     "lint:watch":"npm run lint -- --watch",
-    "test": "mocha --reporter          progress      buildScripts/testSetup.js    \"src/**/*.test.js\"   ",
+    "test": "mocha --reporter progress buildScripts/testSetup.js \"src/**/*.test.js\"",
     "test:watch":"npm run test -- --watch"
   },
   "author": "Cory House",
