@@ -1,0 +1,21 @@
+//Here we're trying to configure eslint. We could have done this in package.json too. Copy pasted from bit.ly/jsdeveslint
+{
+  "root": true,                           //We're declaring that its root Eslint file. By default eslint files would look for configuration files in parent folder upto root folder
+  "extends": [
+    "eslint:recommended",                 //We're going with eslint recommended rules. other alternatives -airblnb,xo etc
+    "plugin:import/errors",               //Complimentary plugins to enhance linting . This one though is caring for wrong imports that we might make
+    "plugin:import/warnings"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 7,                     //version of javascript we're using
+    "sourceType": "module"                //We've declared that we're using standard javascript modules
+  },
+  "env": {                                //Environments eslint should be aware of and need to lint on
+    "browser": true,
+    "node": true,
+    "mocha": true
+  },
+  "rules": {                              //rules we want to override
+    "no-console":1                        //o - off, 1 - warning, 2-error. Will give a warning when cosole isn't available
+  }
+}

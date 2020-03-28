@@ -1,0 +1,10 @@
+
+{
+  "presets":["latest"]
+}
+
+
+// We could have written this in package.json to make babel work
+// "babel":{
+//   "presets":"latest"
+// },
